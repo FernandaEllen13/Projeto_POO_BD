@@ -33,7 +33,7 @@ public class Main {
             System.out.println("Digite o que deseja: ");
             System.out.println("1 - Inserir novas informacoes no banco de dados");
             System.out.println("2 - Alterar informacoes no banco de dados");
-            System.out.println("3 - Deletar informacos no banco de dados");
+            System.out.println("3 - Deletar informacoes no banco de dados");
             System.out.println("0 - Sair\n");
             x = entrada.nextInt();
 
@@ -125,7 +125,7 @@ public class Main {
                             System.out.println("Entre com o id do planeta: ");
                             planeta1.setIdplaneta(entrada.nextInt());
                             entrada.nextLine();
-                            System.out.println("Entre com o tipo do planeta: ");
+                            System.out.println("Entre com o nome do planeta: ");
                             planeta1.setnome(entrada.nextLine());
 
                             Addplaneta.atualizarPlaneta(planeta1.getIdplaneta(), planeta1);
@@ -145,6 +145,7 @@ public class Main {
                             System.out.println("Informe o ID do planeta que essa especie reside: ");
                             raca1.setPlaneta_idplaneta(entrada.nextInt());
                             entrada.nextLine();
+                            raca1.setTecnologia_idTecnlogia(raca1.getTecnologia_idTecnlogia());
 
                             AddracaAlienigena.atualizarRaca(raca1.getIdRacaAlienigena(), raca1);
                         }
@@ -171,6 +172,7 @@ public class Main {
                             tecno1.setFuncao(entrada.nextLine());
                             System.out.println("Informe a diferença tecnologica dessa raça referente aos humanos");
                             tecno1.setTempo_criacao(entrada.nextLine());
+                            tecno1.setRacaAlienigena_idRacaAlienigena(raca1.getIdRacaAlienigena());
 
                             Addtecnlogia.atualizarTecnologia(tecno1.getIdTecnologia(), tecno1);
                         }

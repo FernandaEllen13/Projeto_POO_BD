@@ -37,7 +37,7 @@ import java.util.ArrayList;
         // ATUALIZAR PLANETA
         public boolean atualizarPlaneta(int id, planeta planeta) {
             connectToDB();
-            String sql = "UPDATE planeta SET tipo = ? where idPlaneta = ?";
+            String sql = "UPDATE planeta SET nome = ? where idPlaneta = ?";
 
             try {
                 pst = con.prepareStatement(sql);

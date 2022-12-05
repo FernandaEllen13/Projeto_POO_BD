@@ -5,6 +5,7 @@ package br.inatel.cdg.gra.MODEL;
        protected String nome;
        protected String funcao;
        protected String tempo_criacao;
+       protected int racaAlienigena_idRacaAlienigena;
 
         public int getIdTecnologia() {
             return idTecnologia;
@@ -36,5 +37,13 @@ package br.inatel.cdg.gra.MODEL;
 
         public void setTempo_criacao(String tempo_criacao) {
             this.tempo_criacao = tempo_criacao;
+        }
+
+        public int getRacaAlienigena_idRacaAlienigena() {
+            return racaAlienigena_idRacaAlienigena;
+        }
+
+        public void setRacaAlienigena_idRacaAlienigena(int racaAlienigena_idRacaAlienigena) {
+            this.racaAlienigena_idRacaAlienigena = racaAlienigena_idRacaAlienigena;
         }
     }

@@ -5,6 +5,7 @@ package br.inatel.cdg.gra.MODEL;
       protected String nome;
       protected boolean pacifica;
       protected int planeta_idplaneta;
+      protected int tecnologia_idTecnlogia;
 
         public int getIdRacaAlienigena() {
             return idRacaAlienigena;
@@ -36,5 +37,13 @@ package br.inatel.cdg.gra.MODEL;
 
         public void setPlaneta_idplaneta(int planeta_idplaneta) {
             this.planeta_idplaneta = planeta_idplaneta;
+        }
+
+        public int getTecnologia_idTecnlogia() {
+            return tecnologia_idTecnlogia;
+        }
+
+        public void setTecnologia_idTecnlogia(int tecnologia_idTecnlogia) {
+            this.tecnologia_idTecnlogia = tecnologia_idTecnlogia;
         }
     }
